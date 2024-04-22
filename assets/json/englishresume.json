@@ -1,0 +1,184 @@
+{
+  "basics": {
+    "name": "Lubica Binka Hamarova",
+    "position": "Consultant",
+    "image": "",
+    "email": "hamarova.lubica@gmail.com",
+    "phone": "+421 905 729 985",
+    "url": "https://hamarova.com"
+  },
+  "work": [
+    {
+      "name": "PUBLIC",
+      "position": "Evaluation Associate",
+      "url": "https://www.public.io",
+      "startDate": "2023-12",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [ "Creating a framework for assessing UK Research and Innovation's key digital initiatives focused on citizen inclusion.", "Measuring the effectiveness of the Digital Planning Fund for the UK's Department for Levelling Up, Housing and Communities."]
+    },
+{
+      "name": "World Bank Group",
+      "position": "Principal Investigator",
+      "url": "https://www.worldbank.org/en/home",
+      "startDate": "2023-10",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [ "Co-designed the impact evaluation of an innovative delivery system of social benefits for the marginalized Roma population across three Eastern European countries.", "Developed the survey and created guidelines for the intervention methodology."]
+    },
+{
+      "name": "World Bank Group",
+      "position": "Country Coordinator",
+      "url": "https://www.worldbank.org/en/home",
+      "startDate": "2023-02",
+      "endDate": "2023-10",
+      "summary": "",
+      "highlights": [ "Authored comprehensive report on social protection system in Slovakia.", "Conducted qualitative field research with the Roma population in Slovakia.", "Facilitated contact with local stakeholders, including high-level government officials"]
+    },
+{
+      "name": "World Bank Group",
+      "position": "Research Assistant",
+      "url": "https://www.worldbank.org/en/home",
+      "startDate": "2022-07",
+      "endDate": "2023-02",
+      "summary": "",
+      "highlights": [ "Conducted randomized controlled trials in low- to middle-income countries studying preferences toward tax policy and redistribution.", "Prepared the pre-analysis plan, contributed to intervention and survey design, and facilitated data analysis for the project."]
+    },
+{
+      "name": "Ministry of Investment, Development and Informatization of Slovak Republic",
+      "position": "Analyst",
+      "url": "https://www.mirri.sk",
+      "startDate": "2020-12",
+      "endDate": "2022-06",
+      "summary": "",
+      "highlights": [ "Integrated evidence-based policy-making into Slovak government practice.", "Authored the first analysis of digital inclusion in Slovakia adopted by parliament as a national strategy.", "Authored report on public IT contracts (led to 4 mil. euro savings in the national budget).", "Developed impact ranking model for government investment projects."]
+    },
+{
+      "name": "National Bank of Slovakia",
+      "position": "Research Assistant",
+      "url": "https://nbs.sk",
+      "startDate": "2021-05",
+      "endDate": "2022-03",
+      "summary": "",
+      "highlights": [ "Performed data analysis to estimate the effect of hierarchy on scientific knowledge generation in academia, using a text-based dataset.", "Co-authored policy brief which estimates the VAT pass-through rate making use of a large and detailed dataset from a Slovak retailer."]
+    }
+],
+  "education": [
+    {
+      "institution": "University of Amsterdam",
+      "url": "https://www.uva.nl/",
+      "area": "Quantitative Finance",
+      "studyType": "MSc",
+      "startDate": "2019-09",
+      "endDate": "2020-08",
+      "courses": ["Thesis topic: A Case For Institution and Policy Contingent Aid in the Context of European Union Structural Investment Funds"]
+    },
+     {
+      "institution": "University of Amsterdam",
+      "url": "https://www.uva.nl/",
+      "area": "Economics & Business",
+      "studyType": "BSc",
+      "startDate": "2016-09",
+      "endDate": "2019-07",
+      "courses": ["Thesis topic: Relationship between implied volatility and market returns: Evidence for Behavioural approach from German market"]
+    }],
+  "certificates": [
+    {
+      "name": "Designing Randomized Evaluations",
+      "date": "2021-01",
+      "issuer": "JPAL, MITx",
+      "url": "https://www.povertyactionlab.org",
+      "icon": ""
+    },
+    {
+      "name": "Data Analysis for Social Scientists",
+      "date": "2021-01",
+      "issuer": "MITx",
+      "url": "https://mitxonline.mit.edu",
+      "icon": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "How do prices react to low VAT?r",
+      "publisher": "National Bank of Slovakia",
+      "releaseDate": "2022-02-06",
+      "url": "https://nbs.sk/dokument/d3685cd3-5f35-4ae2-97ae-8df2354ab265/stiahnut?force=false",
+      "summary": "Available above."
+    },
+    {
+      "name": "Offline. The state of digital inclusion in Slovakia",
+      "publisher": "Ministry of Investments, Development and Informatization of Slovak Republic",
+      "releaseDate": "2022-01",
+      "url": "hhttps://mirri.gov.sk/wp-content/uploads/2019/09/Digi_chudoba_final.pdf",
+      "summary": "Available above."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Stata"
+ },{
+      "name": "R"
+    },
+ {
+      "name": "LaTeX"
+
+    },
+ {
+      "name": "Data Analysis"
+
+    },
+ {
+      "name": "Survey Design"
+
+    },
+ {
+      "name": "Policy Analysis"
+
+    },
+ {
+      "name": "Project Management"
+
+    },
+ {
+      "name": "Academic Writing"
+
+    }
+  ],
+  "languages": [
+    {
+      "language": "Slovak",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+{
+      "language": "Czech",
+      "fluency": "Highly proficient",
+      "icon": ""
+    },
+{
+      "language": "Ukrainian",
+      "fluency": "A2",
+      "icon": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cooperate, Reach Out, Integrate Services (CRIS)",
+      "summary": "CRIS is a European Commission project, focused on strengthening integrated service delivery for vulnerable groups to support their inclusion in the labour market and society. I am a working on this project as member of a national panel of experts from the Slovak Academy of Science and will compose a policy analysis aimed at improving the current labor policy landscape.",
+      "startDate": "2024-01",
+      "endDate": "Present"
+    },
+{
+      "name": "Basic Income Guaranee for Marginalized Groups (EU BIG)",
+      "summary": "EU BIG is a pilot project by the European Commission to improve the delivery of social benefits to marginalized Roma households in Romania, Bulgaria, and Slovakia. I manage the evaluation methodology of this project across the three countries on behalf of the World Bank team. I also serve as the country coordinator for Slovakia.",
+      "startDate": "2023-02",
+      "endDate": "Present"
+    }
+  ]
+}

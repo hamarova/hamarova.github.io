@@ -23,12 +23,17 @@ $(document).ready(function () {
     $(".publications h2").each(function () {
       $(this).attr("data-toc-skip", "");
     });
+    $("h1:contains('Portfólio')").each(function () {
+      $(this).attr("data-toc-skip", "");
+    });
+
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
-    $("body").scrollspy({
+   /* $("body").scrollspy({
       target: navSelector,
-    });
+      offset: 70
+    }); Scrollspy */
   }
 
   // add css to jupyter notebooks
