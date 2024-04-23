@@ -493,6 +493,14 @@ footer.sticky-bottom {
   color: var(--global-text-color);
 }
 
+@media (max-width: 576px) {
+  .table-cv, .badge {
+    width: auto;
+    min-width: auto;
+    font-size: smaller;  // Optionally, reduce the font size on smaller screens
+  }
+}
+
 // Repositories
 
 @media (min-width: 768px) {
@@ -1065,7 +1073,6 @@ nav[data-toggle="toc"] {
     }
   }
 }
-
 
 .featured-posts {
   a {
