@@ -17,14 +17,14 @@
   contents:
     - title: PUBLIC, Konzultantka
       url: "https://www.public.io"
-      year: "2023/12 - "
+      year: "2023/12- "
       description:
         - "Tvorím hodnotiace a monitorovacie správy pre najväčšie britské digitálne a inovačné projekty. Analyzujem ich dopad na cieľovú skupinu, ekonomickú návratnosť, a procesné nastavenie. Výsledkom sú rozsiahle štúdie s odporúčaniami pre lepšiu implementáciu v budúcnosti."
         - "V mojom portfóliu sú projekty pre Ministerstvo rozvoja a bývania, Britskú inovačnú agentúru a Ministerstvo zahraničných vecí."
 
     - title: World Bank Group, Konzultantka
       url: "https://www.worldbank.org/en/home"
-      year: "2023/02 - "
+      year: "2023/02- "
       description:
         - "Kooordinujem projekt BIG na Slovensku."
         - "Vypracovala som komplexnú správu o systéme sociálnej ochrany na Slovensku."
@@ -34,14 +34,14 @@
 
     - title: World Bank Group, Vedecká pracovíčka
       url: "https://www.worldbank.org/en/home"
-      year: "2022/07 - 2023/02"
+      year: "2022/07-2023/02"
       description:
         - "Spolu s kolegami som skúmala rôzne typy daňových systémov v nízkopríjmových krajinách. Cieľom výskumu bolo vyhodnotiť preferencie občanov voči daňovej politike z pohľadu prerozdeľovaniu. Inými slovami aké daňové zaťaženie (príjmu alebo spotreby - HDP) je férovejšie."
         - "V rámci výskumného tímu som sa venovala zberu dát a následnej ekonometrickej analýze. Výskum bol realizovaný na základe inovatívnej metódy RCT (Randomised control trials) v spolupráci s kolegami z Harvardu."
 
     - title: Ministerstvo investícií, rozvoja a informatizácie Slovenskej republiky, Analytička
       url: "https://www.mirri.sk"
-      year: "2020/12 - 2022/06"
+      year: "2020/12-2022/06"
       description:
         - "V rámci analytickej jednotky som pripravovala dátové podklady priamo pre kanceláriu ministra."
         - "Som autorkou prvej analýzy digitálnej inklúzie na Slovensku, ktorá bola predložená a prijatá parlamentom SR a Hospodárskou radou SR."
@@ -50,7 +50,7 @@
 
     - title: Národná banka Slovenska, Výskumný asistent
       url: "https://nbs.sk"
-      year: "2021/05 - 2022/03"
+      year: "2021/05-2022/03"
       description:
         - "Prostredníctvom analýzy datasetu na báze textu, som sa spolu s kolegami snažila determinovať efekt akademickej hierarchie na vytváranie vedeckých poznatkov."
         - "Som spoluautorkou analytického komentáru v ktorom sa dočítate do akej miery sa zmeny v DPH premietnu do spotrebiteľských cien. Analýzu sme spolu s tímom vytvorili na základe mikro dát zo slovenského trhu."
@@ -60,13 +60,13 @@
   contents:
     - title: MSc., Kvantitatívne financie
       institution: University of Amsterdam
-      year: "2019 - 2020"
+      year: "2019-2020"
       description:
         - "Téma dizertačnej práce: A Case For Institution and Policy Contingent Aid in the Context of European Union Structural Investment Funds (sk. Inštitucionálna a politicky podmienená finančná pomoc v kontexte štrukturálnych investičných fondov Európskej únie)"
 
     - title: Bc., Ekonomika a podnikanie
       institution: University of Amsterdam
-      year: "2016 - 2019"
+      year: "2016-2019"
       description:
         - "Téma dizertačnej práce: Relationship between implied volatility and market returns: Evidence for Behavioural approach from German market (sk. Vzťah medzi implikovanou volatilitou a výnosmi trhu: Dôkazy pre behaviorálny prístup z nemeckého trhu)."
 
