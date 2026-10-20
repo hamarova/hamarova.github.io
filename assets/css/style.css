@@ -271,33 +271,26 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.045em;
 }
 .merit-hlavny em { font-style: normal; color: var(--bezova); }
-.merit-spodok {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px 48px;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-.merit-spodok p { margin: 0; flex: 1 1 420px; max-width: 640px; font-size: 19px; line-height: 1.45; }
+.merit-popis { margin: 0; max-width: 640px; font-size: 19px; line-height: 1.45; }
 
-.merit-foto { position: relative; aspect-ratio: 1 / 1; }
-.merit-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-/* Plynulý prechod z oranžovej do fotky (na mobile zhora) */
-.merit-foto::before {
-  content: "";
+/* Fotka začína ostro na hrane, bez prechodu */
+.merit-foto { position: relative; display: block; aspect-ratio: 1 / 1; overflow: hidden; }
+.merit-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; transition: transform 0.4s ease; }
+.merit-foto:hover img { transform: scale(1.03); }
+.merit-foto-odkaz {
   position: absolute;
-  inset: -4px 0 0 -4px; /* presah cez okraj fotky, aby nebolo vidieť švík */
-  z-index: 1;
-  background: linear-gradient(to bottom, var(--oranzova) 0%, rgba(255, 74, 28, 0.96) 4%, rgba(255, 74, 28, 0.85) 9%, rgba(255, 74, 28, 0.62) 15%, rgba(255, 74, 28, 0.36) 22%, rgba(255, 74, 28, 0.14) 29%, rgba(255, 74, 28, 0) 36%);
+  left: 0;
+  bottom: 0;
+  padding: 14px 20px;
+  background: var(--bezova);
+  font-weight: 600;
+  font-size: 17px;
 }
+.merit-foto:hover .merit-foto-odkaz { background: var(--cierna); color: var(--biela); }
 
 @media (min-width: 900px) {
   .merit { grid-template-columns: 1.1fr 1fr; }
   .merit-foto { aspect-ratio: auto; min-height: 520px; }
-  /* na počítači prechod zľava */
-  .merit-foto::before {
-    background: linear-gradient(to right, var(--oranzova) 0%, rgba(255, 74, 28, 0.96) 4%, rgba(255, 74, 28, 0.85) 9%, rgba(255, 74, 28, 0.62) 15%, rgba(255, 74, 28, 0.36) 22%, rgba(255, 74, 28, 0.14) 29%, rgba(255, 74, 28, 0) 36%);
-  }
 }
 
 /* ---------- Kontaktný pás (na konci každej stránky) ---------- */
