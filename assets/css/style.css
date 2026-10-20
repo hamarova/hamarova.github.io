@@ -181,19 +181,17 @@ img { display: block; max-width: 100%; }
 }
 
 .expertiza-pole {
-  min-height: 340px;
   padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 24px;
   border-right: var(--ciara);
   border-bottom: var(--ciara);
 }
 .expertiza-pole:nth-child(even) { background: var(--bezova); }
 
 /* Bodky v rohu poľa (1, 2, 3) */
-.expertiza-bodky { display: flex; gap: 10px; }
+/* Pevná medzera pod bodkami, aby boli nadpisy vo všetkých poliach v rovnakej výške */
+.expertiza-bodky { display: flex; gap: 10px; margin-bottom: 180px; }
 .bodka { width: 28px; height: 28px; border-radius: 50%; background: var(--oranzova); }
 .expertiza-pole:nth-child(even) .bodka { background: var(--cierna); }
 
@@ -208,7 +206,8 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 640px) {
   .expertiza { grid-template-columns: 1fr; }
-  .expertiza-pole { min-height: 260px; padding: 24px; }
+  .expertiza-pole { padding: 24px; }
+  .expertiza-bodky { margin-bottom: 96px; }
 }
 
 /* ---------- Zoznamy (Profil a Publikácie) ---------- */
