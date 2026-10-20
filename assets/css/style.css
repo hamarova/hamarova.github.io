@@ -129,9 +129,9 @@ img { display: block; max-width: 100%; }
 .uvod-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 
 .uvod-text p {
-  margin: 0 0 20px;
-  font-size: 21px;
-  line-height: 1.35;
+  margin: 0 0 14px;
+  font-size: 18px;
+  line-height: 1.45;
   letter-spacing: -0.01em;
 }
 
