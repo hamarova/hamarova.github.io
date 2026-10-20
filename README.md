@@ -51,6 +51,10 @@ Osobný web Ľubice Hamarovej. Jednoduchý Jekyll web bez témy.
    ---
    ```
 
+4. Ak nepoznáš presný dátum, daj do názvu súboru približný (slúži na zoradenie)
+   a pridaj riadok `zobrazit_datum: "2/2022"`. Na webe sa potom ukáže tento text
+   namiesto dátumu.
+
 Na úvodnej stránke sa zobrazia tri najnovšie články, na stránke `/texty/` všetky.
 
 ## Lokálny náhľad

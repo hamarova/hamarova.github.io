@@ -10,7 +10,7 @@
   {% else %}
   <a href="{{ clanok.url | relative_url }}" class="zoznam-riadok">
   {% endif %}
-    <span class="popisok">{{ clanok.date | date: "%-d. %-m. %Y" }}</span>
+    <span class="popisok">{% if clanok.zobrazit_datum %}{{ clanok.zobrazit_datum }}{% else %}{{ clanok.date | date: "%-d. %-m. %Y" }}{% endif %}</span>
     <span class="zoznam-nazov">{{ clanok.title }}</span>
     {% if clanok.typ %}<span class="popisok stitok">{{ clanok.typ }}</span>{% endif %}
   </a>
