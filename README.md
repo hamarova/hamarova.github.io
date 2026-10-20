@@ -10,7 +10,7 @@ Osobný web Ľubice Hamarovej. Jednoduchý Jekyll web bez témy.
 | `index.html` | úvodná stránka so všetkými sekciami |
 | `_data/expertiza.yml` | tri polia v sekcii Expertíza |
 | `_data/profil.yml` | riadky v sekcii Profil (roky a názov) |
-| `_posts/` | publikácie (sekcia Publikácie), každá publikácia = jeden súbor |
+| `_posts/` | texty a publikácie (sekcia Texty), každý = jeden súbor |
 | `_layouts/default.html` | spoločná kostra: hlavička s menu a kontaktný pás |
 | `_layouts/post.html` | vzhľad stránky s jedným článkom |
 | `assets/css/style.css` | farby, písma a rozloženie (farby sú hore v časti „Nastavenia“) |
