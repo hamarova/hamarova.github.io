@@ -249,43 +249,30 @@ img { display: block; max-width: 100%; }
 }
 
 /* ---------- Merit Institute ---------- */
-/* Oranžový blok: text vľavo, fotka s odkazom vpravo (na mobile pod sebou) */
 .merit {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  padding: clamp(24px, 6vw, 88px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: clamp(32px, 6vw, 88px);
   background: var(--oranzova);
 }
-@media (min-width: 900px) {
-  .merit { grid-template-columns: 1.15fr 1fr; gap: clamp(40px, 5vw, 88px); align-items: center; }
-}
-.merit-text { display: flex; flex-direction: column; gap: 24px; }
 .merit-hlavny {
   margin: 0;
-  font-size: clamp(36px, 4.6vw, 72px);
+  max-width: 1100px;
+  font-size: clamp(36px, 5vw, 76px);
   line-height: 0.98;
   font-weight: 600;
   letter-spacing: -0.045em;
 }
 .merit-hlavny em { font-style: normal; color: var(--bezova); }
-.merit-popis { margin: 0; max-width: 640px; font-size: 19px; line-height: 1.45; }
-
-.merit-foto { position: relative; display: block; aspect-ratio: 1 / 1; overflow: hidden; border: var(--ciara); }
-.merit-foto img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-.merit-foto:hover img { transform: scale(1.03); }
-.merit-foto-odkaz {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 14px 20px;
-  background: var(--bezova);
-  border-top: var(--ciara);
-  border-right: var(--ciara);
-  font-weight: 600;
-  font-size: 17px;
+.merit-spodok {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 48px;
+  align-items: flex-end;
+  justify-content: space-between;
 }
-.merit-foto:hover .merit-foto-odkaz { background: var(--cierna); color: var(--biela); }
+.merit-spodok p { margin: 0; flex: 1 1 420px; max-width: 640px; font-size: 19px; line-height: 1.45; }
 
 /* ---------- Kontaktný pás (na konci každej stránky) ---------- */
 .kontakt {
