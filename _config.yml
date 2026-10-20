@@ -12,11 +12,10 @@ email: hamarova.lubica@gmail.com
 linkedin: https://www.linkedin.com/in/lubica-binka-hamarova/
 
 # Fotografia v úvode
-fotografia: /assets/img/prof_pic.jpg
+fotografia: /assets/img/lubica-hamarova.jpg
 
 # Odkazy
 merit_web: https://meritinstitute.sk/
-zivotopis_pdf: # napr. /assets/pdf/zivotopis.pdf – keď je prázdne, odkaz sa nezobrazí
 
 # Adresa článkov, napr. hamarova.com/texty/2025/nazov-clanku/
 permalink: /texty/:year/:title/

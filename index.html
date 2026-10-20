@@ -13,15 +13,14 @@ layout: default
     <p>Lepšie verejné politiky začínajú <em>dôkazmi.</em></p>
   </div>
 
-  <!-- Trieda „kruh“ oreže fotografiu do oválu. Pri novej obdĺžnikovej fotke ju zmaž. -->
-  <div class="uvod-pole uvod-foto kruh">
+  <div class="uvod-pole uvod-foto">
     <img src="{{ site.fotografia | relative_url }}" alt="Ľubica Hamarová">
   </div>
 
   <div class="uvod-pole uvod-text">
     <span class="popisok">(02) O mne</span>
     <div>
-      <p>Ekonómka a odborníčka na hodnotenie verejných politík. Zakladateľka a metodická garantka Merit Institute.</p>
+      <p>Ekonómka a odborníčka na hodnotenie verejných politík. Zakladateľka Merit Institute.</p>
       <a href="#kontakt" class="odkaz-sipka">Spolupráca →</a>
     </div>
   </div>
@@ -30,10 +29,10 @@ layout: default
 <!-- Pás so skúsenosťami -->
 <section class="skusenosti">
   <span class="popisok">Skúsenosti</span>
-  <span>Skupina Svetovej banky</span><span>/</span>
-  <span>Projekty pre britskú štátnu správu</span><span>/</span>
-  <span>Slovenská štátna správa</span><span>/</span>
-  <span>MPP, Oxford</span>
+  <span class="polozka">Skupina Svetovej banky</span>
+  <span class="polozka">Hodnotenie projektov pre britskú štátnu správu</span>
+  <span class="polozka">Slovenská štátna správa</span>
+  <span class="polozka">MPP, Oxford</span>
 </section>
 
 <!-- Expertíza (texty sú v súbore _data/expertiza.yml) -->
@@ -59,9 +58,7 @@ layout: default
 <section id="profil" class="sekcia">
   <div class="sekcia-hlava">
     <h2>Profil</h2>
-    {% if site.zivotopis_pdf %}
-    <a href="{{ site.zivotopis_pdf | relative_url }}" class="popisok">Životopis (PDF) ↓</a>
-    {% endif %}
+    <a href="{{ site.linkedin }}" class="popisok" target="_blank" rel="noopener">Celý životopis na LinkedIne →</a>
   </div>
   <div class="zoznam">
     {% for riadok in site.data.profil %}

@@ -6,7 +6,7 @@ Osobný web Ľubice Hamarovej. Jednoduchý Jekyll web bez témy.
 
 | Súbor / priečinok | Čo obsahuje |
 |---|---|
-| `_config.yml` | nastavenia: meno, mesto, e-mail, LinkedIn, fotografia, odkaz na PDF |
+| `_config.yml` | nastavenia: meno, mesto, e-mail, LinkedIn, fotografia |
 | `index.html` | úvodná stránka so všetkými sekciami |
 | `_data/expertiza.yml` | tri polia v sekcii Expertíza |
 | `_data/profil.yml` | riadky v sekcii Profil (roky, názov, popis) |

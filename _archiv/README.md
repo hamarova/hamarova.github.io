@@ -7,7 +7,7 @@ pretože Jekyll vynecháva priečinky, ktorých názov začína podčiarkovníko
 - `stranky/portfolio.md` – stránka „Portfólio“
 - `stranky/cv.md` a `stranky/cv-udaje.yml` – stránka „CV“ a jej údaje
 - `stranky/stara-uvodna-stranka.md` – pôvodná úvodná stránka
-- `obrazky/` – fotografie použité na týchto stránkach
+- `obrazky/` – fotografie použité na týchto stránkach a stará profilová fotka `prof_pic.jpg`
 - `subory/` – staré CV v PDF a JSON
 
 Pozor: repozitár na GitHube je verejný, takže tieto súbory si tam môže
