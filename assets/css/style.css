@@ -1,0 +1,333 @@
+/* ==========================================================================
+   Štýly webu hamarova.com
+   Farby a písma sa menia na jednom mieste – v časti „Nastavenia“ nižšie.
+   ========================================================================== */
+
+/* ---------- Nastavenia ---------- */
+:root {
+  --oranzova: #FF4A1C;
+  --bezova: #F4EFE6;
+  --cierna: #111111;
+  --biela: #FFFFFF;
+  --seda-text: #333333;
+
+  --pismo: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --pismo-mono: "Geist Mono", ui-monospace, monospace;
+
+  --ciara: 1.5px solid var(--cierna);      /* hrubšia linka mriežky */
+  --ciara-tenka: 1px solid var(--cierna);  /* tenká linka medzi riadkami */
+  --okraj: 32px;                           /* vodorovný okraj stránky */
+  --medzera-sekcie: 120px;                 /* medzera nad každou sekciou */
+}
+
+@media (max-width: 640px) {
+  :root {
+    --okraj: 16px;
+    --medzera-sekcie: 80px;
+  }
+}
+
+/* ---------- Základ ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--pismo);
+  color: var(--cierna);
+  background: var(--biela);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid var(--cierna); outline-offset: 3px; }
+img { display: block; max-width: 100%; }
+::selection { background: var(--oranzova); color: var(--cierna); }
+
+/* Malé popisky ako „(01) Prístup“ alebo dátumy */
+.popisok {
+  font-family: var(--pismo-mono);
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Podčiarknutý odkaz so šípkou, napr. „Spolupráca →“ */
+.odkaz-sipka {
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 17px;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 2px;
+}
+.odkaz-sipka:hover { border-bottom-width: 4px; }
+
+/* ---------- Hlavička a menu ---------- */
+.hlavicka {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px var(--okraj);
+  border-bottom: var(--ciara);
+}
+
+.menu { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; }
+.menu a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.menu .menu-kontakt { background: var(--oranzova); padding: 6px 12px; }
+.menu .menu-kontakt:hover { background: var(--cierna); color: var(--biela); text-decoration: none; }
+
+/* ---------- Veľké priezvisko ---------- */
+.meno-obal {
+  padding: 24px var(--okraj) 0;
+  container-type: inline-size; /* písmo sa prispôsobí šírke tohto obalu */
+}
+.meno {
+  margin: 0;
+  /* 22.1 % šírky obalu = slovo „Hamarová“ vyplní celú šírku */
+  font-size: calc((100vw - 2 * var(--okraj)) * 0.215);
+  font-size: 22.1cqw;
+  line-height: 0.86;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+}
+
+/* ---------- Úvod: tri polia ---------- */
+.uvod {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 32px var(--okraj) 0;
+  border-bottom: var(--ciara);
+}
+
+.uvod-pole {
+  min-height: 460px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.uvod-oranzove { background: var(--oranzova); }
+.uvod-oranzove p {
+  margin: 0;
+  font-size: clamp(34px, 3.4vw, 52px);
+  line-height: 1.02;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+.uvod-oranzove em { font-style: normal; color: var(--bezova); }
+
+.uvod-foto { background: var(--bezova); padding: 0; overflow: hidden; }
+.uvod-foto img { width: 100%; height: 100%; object-fit: cover; }
+
+.uvod-text p {
+  margin: 0 0 20px;
+  font-size: 21px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 700px) {
+  .uvod { grid-template-columns: 1fr 1fr; }
+  .uvod-text { grid-column: 1 / -1; min-height: 0; }
+}
+
+@media (min-width: 1000px) {
+  .uvod { grid-template-columns: repeat(3, 1fr); }
+  .uvod-text { grid-column: auto; min-height: 460px; border-left: var(--ciara); }
+}
+
+@media (max-width: 640px) {
+  .uvod-pole { min-height: 360px; padding: 24px; }
+  .uvod-foto { min-height: 420px; }
+  .uvod-text { min-height: 0; }
+}
+
+/* ---------- Pás so skúsenosťami ---------- */
+.skusenosti {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 40px;
+  align-items: baseline;
+  padding: 22px var(--okraj);
+  border-bottom: var(--ciara);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+/* ---------- Spoločné pre sekcie ---------- */
+.sekcia { padding: var(--medzera-sekcie) var(--okraj) 0; }
+
+.sekcia-hlava {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 32px;
+}
+.sekcia-hlava h2,
+.clanok h1 {
+  margin: 0;
+  font-size: clamp(44px, 6vw, 92px);
+  line-height: 0.92;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+.sekcia-hlava a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---------- Expertíza ---------- */
+.expertiza {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  border-top: var(--ciara);
+  border-left: var(--ciara);
+}
+
+.expertiza-pole {
+  min-height: 340px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  border-right: var(--ciara);
+  border-bottom: var(--ciara);
+}
+.expertiza-pole:nth-child(even) { background: var(--bezova); }
+
+.expertiza-pismeno {
+  font-size: 96px;
+  line-height: 0.8;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  color: var(--oranzova);
+}
+.expertiza-pole:nth-child(even) .expertiza-pismeno { color: var(--cierna); }
+
+.expertiza-pole h3 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.expertiza-pole p { margin: 0; font-size: 16px; color: var(--seda-text); }
+
+@media (max-width: 640px) {
+  .expertiza { grid-template-columns: 1fr; }
+  .expertiza-pole { min-height: 260px; padding: 24px; }
+}
+
+/* ---------- Zoznamy (Profil a Texty) ---------- */
+.zoznam { border-top: var(--ciara); }
+
+.zoznam-riadok {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 32px;
+  align-items: baseline;
+  padding: 22px 0;
+  border-bottom: var(--ciara-tenka);
+}
+.zoznam-riadok:last-child { border-bottom: var(--ciara); }
+.zoznam-riadok > .popisok:first-child { width: 160px; }
+
+.zoznam-nazov {
+  flex: 1 1 320px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+.zoznam-detail { flex: 1 1 260px; font-size: 17px; color: var(--seda-text); }
+
+/* Texty: väčšie názvy článkov, celý riadok je odkaz */
+.zoznam-texty .zoznam-riadok { padding: 26px 0; gap: 8px 32px; }
+.zoznam-texty .zoznam-nazov {
+  flex: 1 1 420px;
+  font-size: clamp(26px, 2.6vw, 38px);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+.zoznam-texty a.zoznam-riadok:hover .zoznam-nazov { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+
+.stitok { background: var(--bezova); padding: 4px 10px; }
+
+@media (max-width: 640px) {
+  .zoznam-nazov { font-size: 24px; }
+}
+
+/* ---------- Merit Institute ---------- */
+.merit {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: clamp(32px, 6vw, 88px);
+  background: var(--oranzova);
+}
+.merit-hlavny {
+  margin: 0;
+  max-width: 1100px;
+  font-size: clamp(36px, 5vw, 76px);
+  line-height: 0.98;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+.merit-hlavny em { font-style: normal; color: var(--bezova); }
+.merit-spodok {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 48px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.merit-spodok p { margin: 0; flex: 1 1 420px; max-width: 640px; font-size: 19px; line-height: 1.45; }
+
+/* ---------- Kontaktný pás (na konci každej stránky) ---------- */
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: var(--medzera-sekcie);
+  padding: 56px var(--okraj) 40px;
+  background: var(--bezova);
+  border-top: var(--ciara);
+}
+.kontakt-vyzva {
+  font-size: clamp(56px, 10vw, 160px);
+  line-height: 0.88;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+}
+.kontakt-vyzva:hover { color: var(--oranzova); }
+.kontakt-riadok {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 48px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+  border-top: var(--ciara);
+}
+.kontakt-odkazy { display: flex; gap: 24px; }
+.kontakt-odkazy a { text-decoration: underline; text-underline-offset: 3px; }
+.kontakt-odkazy a:hover { color: var(--oranzova); }
+
+/* ---------- Stránka článku ---------- */
+.clanok { max-width: 760px; }
+.clanok .popisok { display: block; margin-bottom: 24px; }
+.clanok-obsah { margin-top: 48px; font-size: 19px; line-height: 1.6; }
+.clanok-obsah a { text-decoration: underline; text-underline-offset: 3px; }
+.clanok-obsah h2 { font-size: 30px; line-height: 1.1; letter-spacing: -0.03em; margin: 48px 0 16px; }
+.clanok-spat { display: inline-block; margin-top: 48px; }
+
+/* Fotografia orezaná do oválu (pre súčasnú prof_pic.jpg) */
+.uvod-foto.kruh { align-items: center; justify-content: center; padding: 40px; }
+.uvod-foto.kruh img { width: auto; height: auto; max-height: 380px; aspect-ratio: 2337 / 2583; border-radius: 50%; }

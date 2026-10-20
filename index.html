@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<div class="meno-obal">
+  <h1 class="meno">Hamarová</h1>
+</div>
+
+<!-- Úvod: tri polia -->
+<section class="uvod">
+  <div class="uvod-pole uvod-oranzove">
+    <span class="popisok">(01) Prístup</span>
+    <p>Lepšie verejné politiky začínajú <em>dôkazmi.</em></p>
+  </div>
+
+  <!-- Trieda „kruh“ oreže fotografiu do oválu. Pri novej obdĺžnikovej fotke ju zmaž. -->
+  <div class="uvod-pole uvod-foto kruh">
+    <img src="{{ site.fotografia | relative_url }}" alt="Ľubica Hamarová">
+  </div>
+
+  <div class="uvod-pole uvod-text">
+    <span class="popisok">(02) O mne</span>
+    <div>
+      <p>Ekonómka a odborníčka na hodnotenie verejných politík. Zakladateľka a metodická garantka Merit Institute.</p>
+      <a href="#kontakt" class="odkaz-sipka">Spolupráca →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Pás so skúsenosťami -->
+<section class="skusenosti">
+  <span class="popisok">Skúsenosti</span>
+  <span>Skupina Svetovej banky</span><span>/</span>
+  <span>Projekty pre britskú štátnu správu</span><span>/</span>
+  <span>Slovenská štátna správa</span><span>/</span>
+  <span>MPP, Oxford</span>
+</section>
+
+<!-- Expertíza (texty sú v súbore _data/expertiza.yml) -->
+<section id="expertiza" class="sekcia">
+  <div class="sekcia-hlava">
+    <h2>Expertíza</h2>
+    <span class="popisok">(03)</span>
+  </div>
+  <div class="expertiza">
+    {% for oblast in site.data.expertiza %}
+    <div class="expertiza-pole">
+      <span class="expertiza-pismeno">{{ oblast.pismeno }}</span>
+      <div>
+        <h3>{{ oblast.nazov }}</h3>
+        <p>{{ oblast.popis }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Profil (texty sú v súbore _data/profil.yml) -->
+<section id="profil" class="sekcia">
+  <div class="sekcia-hlava">
+    <h2>Profil</h2>
+    {% if site.zivotopis_pdf %}
+    <a href="{{ site.zivotopis_pdf | relative_url }}" class="popisok">Životopis (PDF) ↓</a>
+    {% endif %}
+  </div>
+  <div class="zoznam">
+    {% for riadok in site.data.profil %}
+    <div class="zoznam-riadok">
+      <span class="popisok">{{ riadok.roky }}</span>
+      <span class="zoznam-nazov">{{ riadok.nazov }}</span>
+      <span class="zoznam-detail">{{ riadok.detail }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Merit Institute -->
+<section class="sekcia">
+  <div class="merit">
+    <span class="popisok">(04) Merit Institute</span>
+    <p class="merit-hlavny">Meriame, čo funguje, <em>a pomáhame podľa toho rozhodovať.</em></p>
+    <div class="merit-spodok">
+      <p>Založila som Merit Institute. Venujeme sa meraniu dopadu, hodnoteniu programov a budovaniu kapacít pre neziskové organizácie a verejné inštitúcie.</p>
+      <a href="{{ site.merit_web }}" class="odkaz-sipka" target="_blank" rel="noopener">Web Merit Institute →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Texty: tri najnovšie články z priečinka _posts -->
+<section id="texty" class="sekcia">
+  <div class="sekcia-hlava">
+    <h2>Texty</h2>
+    <a href="{{ '/texty/' | relative_url }}" class="popisok">Všetky →</a>
+  </div>
+  {% include zoznam-textov.html clanky=site.posts limit=3 %}
+</section>
