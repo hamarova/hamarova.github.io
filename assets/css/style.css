@@ -39,6 +39,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 16px; }
 a { color: inherit; text-decoration: none; }
 a:focus-visible { outline: 2px solid var(--cierna); outline-offset: 3px; }
 img { display: block; max-width: 100%; }
@@ -190,14 +192,10 @@ img { display: block; max-width: 100%; }
 }
 .expertiza-pole:nth-child(even) { background: var(--bezova); }
 
-.expertiza-pismeno {
-  font-size: 96px;
-  line-height: 0.8;
-  font-weight: 300;
-  letter-spacing: -0.05em;
-  color: var(--oranzova);
-}
-.expertiza-pole:nth-child(even) .expertiza-pismeno { color: var(--cierna); }
+/* Bodky v rohu poľa (1, 2, 3) */
+.expertiza-bodky { display: flex; gap: 10px; }
+.bodka { width: 28px; height: 28px; border-radius: 50%; background: var(--oranzova); }
+.expertiza-pole:nth-child(even) .bodka { background: var(--cierna); }
 
 .expertiza-pole h3 {
   margin: 0 0 10px;
@@ -213,7 +211,7 @@ img { display: block; max-width: 100%; }
   .expertiza-pole { min-height: 260px; padding: 24px; }
 }
 
-/* ---------- Zoznamy (Profil a Texty) ---------- */
+/* ---------- Zoznamy (Profil a Publikácie) ---------- */
 .zoznam { border-top: var(--ciara); }
 
 .zoznam-riadok {
@@ -235,7 +233,7 @@ img { display: block; max-width: 100%; }
   line-height: 1.15;
 }
 
-/* Texty: väčšie názvy článkov, celý riadok je odkaz */
+/* Publikácie: väčšie názvy, celý riadok je odkaz */
 .zoznam-texty .zoznam-riadok { padding: 26px 0; gap: 8px 32px; }
 .zoznam-texty .zoznam-nazov {
   flex: 1 1 420px;
@@ -303,7 +301,8 @@ img { display: block; max-width: 100%; }
   padding-top: 20px;
   border-top: var(--ciara);
 }
-.kontakt-odkazy { display: flex; gap: 24px; }
+.kontakt-odkazy { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.kontakt-odkazy .kontakt-email { text-transform: none; }
 .kontakt-odkazy a { text-decoration: underline; text-underline-offset: 3px; }
 .kontakt-odkazy a:hover { color: var(--oranzova); }
 

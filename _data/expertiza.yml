@@ -1,13 +1,11 @@
 # Tri polia v sekcii „Expertíza“. Poradie tu = poradie na webe.
+# Počet bodiek v poli sa doplní sám (1., 2., 3. pole).
 
-- pismeno: A
-  nazov: Hodnotenie dopadu
+- nazov: Hodnotenie dopadu
   popis: Kontrafaktuálne a zmiešané metódy na meranie výsledkov programov.
 
-- pismeno: B
-  nazov: Strategické plánovanie
+- nazov: Strategické plánovanie
   popis: Tvorba stratégií a politík vo verejnej správe na základe dát.
 
-- pismeno: C
-  nazov: Sociálna inklúzia
+- nazov: Sociálna inklúzia
   popis: Výskum a hodnotenie programov pre marginalizované komunity.

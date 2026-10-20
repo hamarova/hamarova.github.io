@@ -14,7 +14,7 @@ layout: default
   </div>
 
   <div class="uvod-pole uvod-foto">
-    <img src="{{ site.fotografia | relative_url }}" alt="Binka Hamarová">
+    <img src="{{ site.fotografia | relative_url }}" alt="{{ site.title }}">
   </div>
 
   <div class="uvod-pole uvod-text">
@@ -35,7 +35,8 @@ layout: default
   <div class="expertiza">
     {% for oblast in site.data.expertiza %}
     <div class="expertiza-pole">
-      <span class="expertiza-pismeno">{{ oblast.pismeno }}</span>
+      {% assign pocet_bodiek = forloop.index %}
+      <span class="expertiza-bodky">{% for i in (1..pocet_bodiek) %}<span class="bodka"></span>{% endfor %}</span>
       <div>
         <h3>{{ oblast.nazov }}</h3>
         <p>{{ oblast.popis }}</p>
@@ -73,11 +74,10 @@ layout: default
   </div>
 </section>
 
-<!-- Texty: tri najnovšie články z priečinka _posts -->
-<section id="texty" class="sekcia">
+<!-- Publikácie: všetky súbory z priečinka _posts, od najnovšej -->
+<section id="publikacie" class="sekcia">
   <div class="sekcia-hlava">
-    <h2>Texty</h2>
-    <a href="{{ '/texty/' | relative_url }}" class="popisok">Všetky →</a>
+    <h2>Publikácie</h2>
   </div>
-  {% include zoznam-textov.html clanky=site.posts limit=3 %}
+  {% include zoznam-publikacii.html %}
 </section>

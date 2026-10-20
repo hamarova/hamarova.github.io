@@ -1,16 +1,15 @@
 {% comment %}
-  Zoznam článkov. Použitie: {% include zoznam-textov.html clanky=site.posts limit=3 %}
-  Ak má článok vyplnený „odkaz“, otvorí sa článok na inom webe (napr. SME blog).
+  Zoznam všetkých publikácií z priečinka _posts (od najnovšej).
+  Ak má publikácia vyplnený „odkaz“, otvorí sa na inom webe (napr. SME blog).
 {% endcomment %}
-{% assign pocet = include.limit | default: 1000 %}
 <div class="zoznam zoznam-texty">
-  {% for clanok in include.clanky limit: pocet %}
+  {% for clanok in site.posts %}
   {% if clanok.odkaz %}
   <a href="{{ clanok.odkaz }}" class="zoznam-riadok" target="_blank" rel="noopener">
   {% else %}
   <a href="{{ clanok.url | relative_url }}" class="zoznam-riadok">
   {% endif %}
-    <span class="popisok">{% if clanok.zobrazit_datum %}{{ clanok.zobrazit_datum }}{% else %}{{ clanok.date | date: "%-d. %-m. %Y" }}{% endif %}</span>
+    <span class="popisok">{{ clanok.date | date: "%Y" }}</span>
     <span class="zoznam-nazov">{{ clanok.title }}</span>
     {% if clanok.typ %}<span class="popisok stitok">{{ clanok.typ }}</span>{% endif %}
   </a>

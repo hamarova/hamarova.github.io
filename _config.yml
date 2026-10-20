@@ -1,11 +1,10 @@
 # Hlavné nastavenia webu.
 # Po zmene tohto súboru treba lokálny náhľad (jekyll serve) reštartovať.
 
-title: Binka Hamarová
+title: Binka (Ľubica) Hamarová
 description: Ekonómka a odborníčka na hodnotenie verejných politík.
 lang: sk
 url: https://hamarova.com
-mesto: Bratislava
 
 # Kontakt (zobrazuje sa v kontaktnom páse na konci každej stránky)
 email: hamarova.lubica@gmail.com
@@ -17,8 +16,8 @@ fotografia: /assets/img/lubica-hamarova.jpg
 # Odkazy
 merit_web: https://meritinstitute.sk/
 
-# Adresa článkov, napr. hamarova.com/texty/2025/nazov-clanku/
-permalink: /texty/:year/:title/
+# Adresa vlastných článkov, napr. hamarova.com/publikacie/2025/nazov-clanku/
+permalink: /publikacie/:year/:title/
 
 exclude:
   - README.md

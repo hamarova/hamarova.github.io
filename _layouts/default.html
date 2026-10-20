@@ -13,11 +13,11 @@
 <body>
 
 <header class="hlavicka">
-  <a href="{{ '/' | relative_url }}" class="popisok">{{ site.title }} — {{ site.mesto }}</a>
+  <a href="{{ '/' | relative_url }}" class="popisok">{{ site.title }}</a>
   <nav class="menu popisok">
     <a href="{{ '/' | relative_url }}#expertiza">Expertíza</a>
     <a href="{{ '/' | relative_url }}#profil">Profil</a>
-    <a href="{{ '/' | relative_url }}#texty">Texty</a>
+    <a href="{{ '/' | relative_url }}#publikacie">Publikácie</a>
     <a href="#kontakt" class="menu-kontakt">Kontakt</a>
   </nav>
 </header>
@@ -30,9 +30,8 @@
   <span class="popisok">(05) Kontakt</span>
   <a href="mailto:{{ site.email }}" class="kontakt-vyzva">Napíšte mi →</a>
   <div class="kontakt-riadok popisok">
-    <span>Prednášky · Konzultácie · Médiá · Merit Institute</span>
     <span class="kontakt-odkazy">
-      <a href="mailto:{{ site.email }}">E-mail</a>
+      <a href="mailto:{{ site.email }}" class="kontakt-email">{{ site.email }}</a>
       <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
     </span>
     <span>© {{ site.time | date: '%Y' }}</span>
