@@ -9,7 +9,7 @@ Osobný web Ľubice Hamarovej. Jednoduchý Jekyll web bez témy.
 | `_config.yml` | nastavenia: meno, mesto, e-mail, LinkedIn, fotografia |
 | `index.html` | úvodná stránka so všetkými sekciami |
 | `_data/expertiza.yml` | tri polia v sekcii Expertíza |
-| `_data/profil.yml` | riadky v sekcii Profil (roky, názov, popis) |
+| `_data/profil.yml` | riadky v sekcii Profil (roky a názov) |
 | `_posts/` | články (sekcia Texty), každý článok = jeden súbor |
 | `texty.html` | stránka so zoznamom všetkých článkov |
 | `_layouts/default.html` | spoločná kostra: hlavička s menu a kontaktný pás |

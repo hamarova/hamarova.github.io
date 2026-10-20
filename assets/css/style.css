@@ -124,7 +124,7 @@ img { display: block; max-width: 100%; }
 
 .uvod-foto { background: var(--bezova); padding: 0; overflow: hidden; }
 .uvod-foto { position: relative; }
-.uvod-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+.uvod-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 
 .uvod-text p {
   margin: 0 0 20px;
@@ -147,26 +147,6 @@ img { display: block; max-width: 100%; }
   .uvod-pole { min-height: 360px; padding: 24px; }
   .uvod-foto { min-height: 420px; }
   .uvod-text { min-height: 0; }
-}
-
-/* ---------- Pás so skúsenosťami ---------- */
-.skusenosti {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 40px;
-  align-items: baseline;
-  padding: 22px var(--okraj);
-  border-bottom: var(--ciara);
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: -0.015em;
-}
-/* lomka „/“ za každou položkou okrem poslednej */
-.skusenosti .polozka:not(:last-child)::after { content: "/"; margin-left: 40px; }
-@media (max-width: 640px) {
-  .skusenosti { gap: 6px 16px; font-size: 18px; }
-  .skusenosti .popisok { width: 100%; }
-  .skusenosti .polozka:not(:last-child)::after { margin-left: 16px; }
 }
 
 /* ---------- Spoločné pre sekcie ---------- */
@@ -254,7 +234,6 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.025em;
   line-height: 1.15;
 }
-.zoznam-detail { flex: 1 1 260px; font-size: 17px; color: var(--seda-text); }
 
 /* Texty: väčšie názvy článkov, celý riadok je odkaz */
 .zoznam-texty .zoznam-riadok { padding: 26px 0; gap: 8px 32px; }
